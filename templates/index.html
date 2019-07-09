@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- <body>
+    {% for data in data %}
+    {{data.id}}<br/>
+    {{data.username}}<br/>
+    {{data.email}}<br/>
+    {{data.password}}<br/>
+    {% endfor %} 
+</body>
+     -->
+
+
+<div class="container base-content main-page">
+    <div class="row">
+        <div class="col text-center">
+            <br>
+            <form method="POST">
+                <dt><label for ="topics">To Start</label></dt>
+                <br>
+                <label for="username">Please Enter Your Name</label>
+                <br>
+                <input type="text" id="username" name="username" autofocus/>
+                <br>
+                <br>
+                <label for="email">Please Enter Your Email</label>
+                <br>
+                <input type="text" id="email" name="email" autofocus/>
+                <br>
+                <br>
+                <label for="password">Please Enter Your password</label>
+                <br>
+                <input type="password" id="password" autofocus/> 
+                <br>
+                <br>
+                <button class="btn btn-dark hvr-round-corners">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
